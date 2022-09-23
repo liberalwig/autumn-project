@@ -12,6 +12,7 @@ public class UserVo {
     }
 
     public void setUserNo(int userNo) {
+
         UserNo = userNo;
     }
 
