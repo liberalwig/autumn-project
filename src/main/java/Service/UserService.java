@@ -1,15 +1,12 @@
 package Service;
 
 import Dao.UserDao;
+import Vo.UserVo;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
+
 @Service
-public class UserService {
-
-    final
-    UserDao userDao;
-
-    public UserService(UserDao userDao) {
-        this.userDao = userDao;
-    }
+public interface UserService {
+    public boolean userLogin(UserVo vo, HttpSession session) throws Exception;
 }
