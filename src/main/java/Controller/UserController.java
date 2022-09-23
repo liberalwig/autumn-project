@@ -7,8 +7,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 
+import javax.servlet.http.HttpServlet;
+
 @Controller
-public class UserController {
+public class UserController{
 
      final UserService userService;
      final UsrService usrService;
