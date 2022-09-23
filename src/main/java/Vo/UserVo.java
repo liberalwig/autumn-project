@@ -11,9 +11,7 @@ public class UserVo {
         return UserNo;
     }
 
-    public void setUserNo(int userNo) {
-
-        UserNo = userNo;
+    public void setUserNo(int userNo) { UserNo = userNo;
     }
 
     public String getId() {
