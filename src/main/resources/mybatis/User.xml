@@ -33,16 +33,16 @@
 
     <!-- 유저_5> 로그아웃 -->
     <select id="selectUserByNo" parameterType="int" resultType="UserVo">
-		<![CDATA[
+
         select userNo,
                id,
                password,
                userName,
                email,
                phone
-        from users
+        from user
         where userNo=#{userNo}
-        ]]>
+
 	</select>
 
 
