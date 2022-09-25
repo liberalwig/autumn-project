@@ -1,18 +1,18 @@
 package Vo;
 
 public class UserVo {
-    public int UserNo;
+//    public int UserNo;
     public String id;
     public String password;
     public String email;
     public String phone;
 
-    public int getUserNo() {
-        return UserNo;
-    }
-
-    public void setUserNo(int userNo) { UserNo = userNo;
-    }
+//    public int getUserNo() {
+//        return UserNo;
+//    }
+//
+//    public void setUserNo(int userNo) { UserNo = userNo;
+//    }
 
     public String getId() {
         return id;

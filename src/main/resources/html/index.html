@@ -67,7 +67,7 @@
                 <!-- Login Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form method="post" id="login" action="">
+                        <form method="post" id="login" action="/user/login">
                             <!-- ID input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" name="id" type="text" placeholder="User ID" required/>
@@ -99,7 +99,7 @@
                 <!-- Register Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form method="post" id="register" action="">
+                        <form method="post" id="register" action="/user/join">
                             <!-- ID input-->
                             <div class="form-floating mb-5">
                                 <input class="form-control bg-primary" name="id" type="text" placeholder="User ID" required/>

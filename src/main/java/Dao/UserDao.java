@@ -1,15 +1,9 @@
 package Dao;
 
-import org.mariadb.jdbc.MariaDbDataSource;
-import org.springframework.stereotype.Repository;
+import Vo.UserVo;
 
-@Repository
-public class UserDao {
+public interface UserDao {
+    public boolean userLogin(UserVo vo) throws Exception;
 
-    // 필드
-    private MariaDbDataSource mariaDbDataSource;
-
-    public UserDao(MariaDbDataSource mariaDbDataSource) {
-        this.mariaDbDataSource = mariaDbDataSource;
-    }
+    public void userJoin(UserVo vo) throws Exception;
 }
