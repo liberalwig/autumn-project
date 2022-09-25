@@ -11,7 +11,6 @@ public class UserDao {
     private MariaDbDataSource mariaDbDataSource;
 
         public UserDao(MariaDbDataSource mariaDbDataSource) {
-
             this.mariaDbDataSource = mariaDbDataSource;
         }
 
@@ -22,7 +21,7 @@ public class UserDao {
         public int insertUser(UserVo userVo) {
             System.out.println("UserDao > insertUser()");
 
-            int count = mariaDbDataSource.("user.insertUser", userVo);
+            int count = mariaDbDataSource.insert("user.insertUser", userVo);
             System.out.println(count + " 명의 회원이 추가되었습니다.");
 
             return count;
